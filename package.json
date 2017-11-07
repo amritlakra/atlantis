@@ -1,0 +1,42 @@
+{
+  "name": "atlantis",
+  "version": "1.0.0",
+  "description": "user microservice",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon lib/index.js --exec babel-node --presets es2015,stage-2",
+    "build": "babel lib -d dist",
+    "serve": "node dist/index.js",
+    "test": "mocha --compilers js:babel-register"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amritlakra/atlantis.git"
+  },
+  "keywords": [
+    "user",
+    "microservice"
+  ],
+  "author": "Amrit Lakra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amritlakra/atlantis/issues"
+  },
+  "homepage": "https://github.com/amritlakra/atlantis#readme",
+  "dependencies": {
+    "bunyan": "^1.8.12",
+    "dotenv": "^4.0.0",
+    "graphiql": "^0.11.10",
+    "graphql": "^0.11.7",
+    "graphql-tools": "^2.7.2",
+    "kcors": "^2.2.1",
+    "koa": "^2.3.0",
+    "koa-body": "^2.5.0",
+    "koa-graphql": "^0.7.3",
+    "koa-router": "^7.2.1",
+    "rethinkdb": "^2.3.3",
+    "swagger-jsdoc": "^1.9.7",
+    "useragent": "^2.2.1",
+    "uuid": "^3.1.0"
+  }
+}
